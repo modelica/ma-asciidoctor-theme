@@ -330,3 +330,11 @@ table.tableblock.fit-content > caption.title {
 .paragraph.lead>p, #preamble>.sectionbody>[class=paragraph]:first-of-type p {
     color: var(--ma-body-color);
 }
+
+.quoteblock blockquote, .quoteblock p {
+    color: var(--ma-body-color);
+}
+
+.quoteblock .attribution cite, .verseblock .attribution cite {
+    color: var(--ma-body-color);
+}
