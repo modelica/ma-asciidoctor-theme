@@ -1,2 +1,3 @@
-# ma-asciidoctor-theme
-Common AsciiDoctor theme for specifications by the Modelica Association
+# Modelica Association Asciidoctor Theme
+
+Common [Asciidoctor](https://asciidoctor.org/) theme for specifications by the [Modelica Association](https://modelica.org).
