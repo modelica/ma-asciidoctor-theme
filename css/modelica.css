@@ -14,6 +14,7 @@
     --ma-body-color: #212529;
     --ma-body-bg: #fff;
     
+    --ma-secondary-color: rgb(108, 117, 125);
     --ma-secondary-bg: rgba(245, 245, 245, 1);
     --ma-secondary-active-bg: #dddddd;
 
@@ -336,5 +337,13 @@ table.tableblock.fit-content > caption.title {
 }
 
 .quoteblock .attribution cite, .verseblock .attribution cite {
-    color: var(--ma-body-color);
+    color: var(--ma-secondary-color);
+}
+
+.quoteblock blockquote::before {
+    color: var(--ma-secondary-color);
+}
+
+.sect1+.sect1 {
+    border-top: none;
 }
