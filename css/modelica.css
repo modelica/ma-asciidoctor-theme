@@ -44,7 +44,7 @@
     /*--ma-blue: #5ea9f0;*/
     --ma-red: #dc3545;
 
-    .content img {
+    .content img, .image img {
         filter: none;
     }
 }
@@ -68,7 +68,7 @@
         background: var(--ma-pre-bg);
     }
 
-    .content img {
+    .content img, .image img {
         filter: invert(0.8);
     }
 }
@@ -129,7 +129,7 @@ table tr th, table tr td {
     background: var(--ma-body-bg);
 }
 
-.content img {
+.content img, .image img {
     background: #fff;
     border-radius: 8px;
     padding: 16px;
