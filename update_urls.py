@@ -1,3 +1,5 @@
+""" Replace the CDN with local URLs """
+
 from pathlib import Path
 
 lines = []
