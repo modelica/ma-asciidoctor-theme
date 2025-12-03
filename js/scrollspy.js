@@ -22,6 +22,10 @@ sections = [
 
 window.addEventListener('scroll', function () {
 
+    if (window.innerWidth < 768) {
+        return;
+    }
+
     const currentPos = window.scrollY + 80;
 
     for (var i = 0; i < sections.length; i++) {
