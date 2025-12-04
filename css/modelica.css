@@ -347,3 +347,9 @@ table.tableblock.fit-content > caption.title {
 .sect1+.sect1 {
     border-top: none;
 }
+
+@media print {
+    .ma-header {
+        display: none !important;
+    }
+}
