@@ -58,14 +58,6 @@ function updateTheme(newTheme) {
     document.querySelectorAll('picture').forEach(picture => {
         updatePictureSrc(picture, newTheme);
     });
-
-    const cssUrl = 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/';
-
-    document.querySelectorAll('link[rel="stylesheet"][href]').forEach(link => {
-        if (link.href.startsWith(cssUrl)) {
-            link.href = cssUrl + (newTheme === 'dark' ? 'dark' : 'github') + '.min.css';
-        }
-    });
 }
 
 function toggleTheme() {

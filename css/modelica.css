@@ -1,12 +1,3 @@
-/*
-:root {
-  --ma-bg-color: #1b1b1b;
-  --ma-fg-color: #fff;
-  --ma-blue: #0062cc;
-  --ma-red: #dc3545;
-}
-*/
-
 :root,[data-ma-theme="light"] {
 
     --ma-nav-height: 60px;
@@ -178,7 +169,7 @@ a {
     text-decoration: none;
 }
 
-a:hover,a:focus{
+a:hover, a:focus{
     color: var(--ma-blue);
 }
 
@@ -352,4 +343,37 @@ table.tableblock.fit-content > caption.title {
     .ma-header {
         display: none !important;
     }
+}
+
+.hljs {
+    color: var(--ma-body-color);
+    background-color: var(--ma-secondary-bg);
+}
+
+.hljs-keyword, .hljs-selector-tag, .hljs-subst {
+    color: var(--ma-blue);
+    font-weight: normal;
+}
+
+.hljs-comment, .hljs-quote {
+    color: var(--ma-secondary-color);
+    font-style: normal;
+}
+
+.hljs-title, .hljs-section, .hljs-selector-id {
+    color: var(--ma-body-color);
+    font-weight: normal;
+}
+
+.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
+    color: var(--ma-red);
+}
+
+.hljs-tag, .hljs-name, .hljs-attribute {
+    color: var(--ma-blue);
+    font-weight: normal;
+}
+
+.hljs-string, .hljs-doctag {
+    color: var(--ma-red);
 }
