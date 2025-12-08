@@ -151,6 +151,10 @@ pre code, pre pre {
     text-rendering: optimizeSpeed;
 }
 
+p a > code:hover {
+    color: var(--ma-body-color);
+}
+
 .literalblock pre, .listingblock > .content > pre {
     border: 1px solid var(--ma-border-color);
     background: var(--ma-secondary-bg);
@@ -351,7 +355,7 @@ table.tableblock.fit-content > caption.title {
 }
 
 .hljs-keyword, .hljs-selector-tag, .hljs-subst {
-    color: var(--ma-blue);
+    color: var(--ma-body-color);
     font-weight: normal;
 }
 
@@ -361,19 +365,19 @@ table.tableblock.fit-content > caption.title {
 }
 
 .hljs-title, .hljs-section, .hljs-selector-id {
-    color: var(--ma-body-color);
-    font-weight: normal;
-}
-
-.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
-    color: var(--ma-red);
-}
-
-.hljs-tag, .hljs-name, .hljs-attribute {
     color: var(--ma-blue);
     font-weight: normal;
 }
 
+.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
+    color: var(--ma-blue);
+}
+
+.hljs-tag, .hljs-name, .hljs-attribute {
+    color: var(--ma-body-color);
+    font-weight: normal;
+}
+
 .hljs-string, .hljs-doctag {
-    color: var(--ma-red);
+    color: var(--ma-blue);
 }
