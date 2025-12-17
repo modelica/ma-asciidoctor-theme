@@ -398,3 +398,8 @@ table.tableblock.fit-content > caption.title {
 .hljs-built_in, .hljs-builtin-name {
     color: var(--ma-blue);
 }
+
+.conum[data-value] {
+    color: var(--ma-body-bg) !important;
+    background: var(--ma-body-color);
+}
