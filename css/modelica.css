@@ -369,8 +369,12 @@ table.tableblock.fit-content > caption.title {
     font-weight: normal;
 }
 
-.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable, .hljs-tag .hljs-attr {
+.hljs-number, .hljs-literal, .hljs-variable, .hljs-template-variable {
     color: var(--ma-blue);
+}
+
+.hljs-tag .hljs-attr {
+    color: var(--ma-body-color);
 }
 
 .hljs-tag, .hljs-name, .hljs-attribute {
@@ -378,6 +382,19 @@ table.tableblock.fit-content > caption.title {
     font-weight: normal;
 }
 
-.hljs-string, .hljs-doctag {
+.hljs-string {
+    color: var(--ma-blue);
+}
+
+.hljs-doctag {
+    color: var(--ma-secondary-color);
+}
+
+.hljs-meta {
+    color: var(--ma-body-color);
+    font-weight: normal;
+}
+
+.hljs-built_in, .hljs-builtin-name {
     color: var(--ma-blue);
 }
