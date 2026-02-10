@@ -1,0 +1,26 @@
+on:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  build-html:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          submodules: recursive
+      - name: Generate revnumber
+        run: |
+          [[ $GITHUB_REF_TYPE == "tag" ]] && REVNUMBER=${GITHUB_REF:11} || REVNUMBER=${GITHUB_SHA:0:7}
+          echo GITHUB_SHA:      $GITHUB_SHA
+          echo GITHUB_REF_TYPE: $GITHUB_REF_TYPE
+          echo GITHUB_REF:      $GITHUB_REF
+          echo REVNUMBER:       $REVNUMBER
+          echo "REVNUMBER=$REVNUMBER" >> $GITHUB_ENV
+      - name: Generate HTML
+        run: docker run --rm -v $PWD:/documents/ asciidoctor/docker-asciidoctor:1.101 \
+          asciidoctor -B /documents/docs -b html5 --failure-level WARN -v docs/index.adoc \
+          --attribute=revnumber=${{ env.REVNUMBER }} --attribute=revdate=$(date +%F)
