@@ -201,7 +201,7 @@ h2, h3, h4, h5 {
     color: var(--ma-body-color);
 }
 
-h2, h3, h4, h5, table, .dlist {
+a, h2, h3, h4, h5, table, .dlist {
     scroll-margin-top: calc(var(--ma-nav-height) + 10px);
 }
 
