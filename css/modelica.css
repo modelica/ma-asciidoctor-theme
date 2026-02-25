@@ -316,7 +316,7 @@ table.tableblock.fit-content > caption.title {
     font-size: 2rem;
     line-height: var(--menu-bar-height);
     text-align: center;
-    margin: 0;
+    margin: 0 1em;
     flex: 1;
     white-space: nowrap;
     overflow: hidden;
