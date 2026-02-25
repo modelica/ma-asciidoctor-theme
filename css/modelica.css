@@ -349,6 +349,12 @@ table.tableblock.fit-content > caption.title {
     }
 }
 
+@media screen and (max-width: 767px) {
+    .ma-header h1 {
+        visibility: hidden;
+    }
+}
+
 .hljs {
     color: var(--ma-body-color);
     background-color: var(--ma-secondary-bg);
